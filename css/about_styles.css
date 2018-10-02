@@ -1,0 +1,53 @@
+section{
+	text-align: left;
+}
+
+/*Subscription*/
+
+.subscription-form-group input {
+	height: 65px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	text-align: center;
+	background-color: #f8f8f8;
+	font-size: 0.8em;
+}
+
+.subscription-form-group input:focus {
+	border-color: #f17471;
+	box-shadow: 0 0 0 0.2rem rgba(241,116,113,.25);
+}
+
+.btn-col {
+	margin-bottom: auto;
+	margin-top: auto; 
+}
+.btn-col .btn {
+	padding: 15px 10px;
+	text-transform: uppercase;
+}
+
+.adds {
+	margin-top: 80px;
+}
+.adds-row p {
+	margin-top: 15px;
+}
+
+.adds-icon {
+	font-size: 3.5rem;
+	color: #f17471;
+	margin-bottom: 30px;
+}
+
+.map {
+	width: 100%;
+	height: 400px;
+}
+#map {
+width: 100%; height: 100%; padding: 0; margin: 0;
+        }
+
+footer {
+margin-top: 0px;
+}

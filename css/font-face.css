@@ -1,0 +1,16 @@
+@font-face {
+ font-family: "Poppins";
+ src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+ font-family: "CentureGothic";
+ src: url("../fonts/Centure-Gothic.ttf") format("truetype");
+}
+@font-face {
+ font-family: "Montserrat-Regular";
+ src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+ font-family: "Montserrat-Thin";
+ src: url("../fonts/Montserrat/Montserrat-Thin.ttf") format("truetype");
+}

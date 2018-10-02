@@ -1,0 +1,323 @@
+
+.header-small{
+	background-color: #351c43;
+	color: white;
+}
+
+
+.header-small-row{
+	height: 50px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-small-row a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-small-icon {
+	margin-right: 5px;
+	color: #666666
+}
+
+.header-small-row a:hover .header-small-icon{
+
+	color: white!important;
+	transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.header-small-logo{
+	font-size: 1.2rem;
+	font-weight: 1.2;
+	display: inline;
+	margin-left: 15px;
+}
+
+.logo-row {
+	height: 135px;
+	border-bottom: 1px solid #dedede;
+}
+
+.header-search{
+	display: flex;
+	align-items: center;
+}
+.header-search a{
+	width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px black solid;
+	font-weight: 600;
+	color: #000000;
+}
+
+.header-search a:hover{
+	text-decoration: none;
+}
+
+.header-logo{
+	display: flex;
+	align-items: center;
+}
+
+.main-logo-text{
+	width: 240px;
+}
+
+.main-logo-logo{
+	width: 100px
+}
+.menu-row {
+	height: 55px
+}
+
+/*NavBar*/
+
+.sub-menu-parent { position: relative; }
+
+.sub-menu { 
+  visibility: hidden; /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.5s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+.sub-menu-parent:focus .nav-arrow-acnimation,
+.sub-menu-parent:focus-within .nav-arrow-acnimation,
+.sub-menu-parent:hover .nav-arrow-acnimation {
+  transform: rotate(90deg);
+  transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+/* presentational */
+nav a {font-family: "Montserrat-Regular"; letter-spacing: 1px; color: #000000; display: block; padding: 0.5em 1em; text-decoration: none; text-transform: uppercase;}
+nav a:hover {text-decoration: none;
+				color: #f17471;}
+nav ul,
+nav ul li { list-style-type: none; padding: 0; margin: 0; 	background-color: white; z-index: 100  }
+
+nav > ul {
+	display: flex;
+    justify-content: space-around; 
+    text-align: center; 
+}
+nav > ul > li { display: inline-block;}
+nav > ul > li:first-child {}
+nav > ul> li.menu-active a {
+	color: #dedede;
+}
+nav > ul> li.menu-active:hover a {
+	pointer-events: none;
+	text-decoration: none;
+	cursor: default;
+}
+
+.nav-arrow {margin-bottom: -2px;
+font-weight: 300;}
+
+/* Parallax */
+
+.parallax {
+	z-index: -1;
+	background-color: grey;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url("../img/img_parallax.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.overlay{
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+.parallax-textfield {
+	margin-top: auto;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.parallax-icon {
+	font-size: 4rem;
+}
+
+.parallax-textfield-first h1 {
+	font-family: "Montserrat-Thin";
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 2.5rem;
+
+}
+
+.parallax-textfield-second{
+	margin-top: auto;
+	margin-bottom: 60px;
+}
+
+.parallax-textfield-second a {
+	color: #f17471;
+}
+
+/*Collection Grid*/
+
+.collections-content {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.collections-content figure {
+    margin: 0;
+}
+
+.collections-content figure img {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.collections-content .collections-entry-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.9);
+    font-family: 'CentureGothic', sans-serif;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: ease-in-out 0.5s;
+}
+
+.collections-content:hover .collections-entry-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.collections-content a {
+	font-size: 1.2rem;
+	font-weight: 600;
+    color: #f17471;
+}
+
+
+
+/*news Grid*/
+
+.news-content {
+	margin-top: 30px;
+}
+
+
+.news-content figure {
+	overflow: hidden;
+}
+
+.news-content figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.news-content-text span {
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.news-content a:hover{
+	color: #f17471;
+	text-decoration: none;
+}
+
+.news-content a:hover .news-content-text span {
+	color: #f17471;
+	transition: ease-in-out 0.5s;
+}
+
+/* Carousel */
+
+.carousel-caption {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -15%);
+}
+
+.carousel-item img {
+	position: relative;
+	z-index: -1;
+	height: 580px;
+	object-fit: cover;
+}
+
+.carousel-caption h5 {
+	font-size: 2em;
+}
+
+.carousel-caption a{
+	margin-top: 20px;
+	color: #f17471; 
+	font-weight: 600;
+}
+
+.carousel-caption a:hover{
+	transition: ease-in-out 0.5s;
+}
+
+/*Subscription*/
+
+.subscription-form-group input {
+	height: 65px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	text-align: center;
+	background-color: #f8f8f8;
+	font-size: 0.8em;
+}
+
+.subscription-form-group input:focus {
+	border-color: #f17471;
+	box-shadow: 0 0 0 0.2rem rgba(241,116,113,.25);
+}
+
+.subscription button {
+	height: 50px;
+	text-transform: uppercase;
+}
